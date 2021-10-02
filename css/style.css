@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* start header */
+header {
+    height: 100vh;
+    background-image: url("../img/Screenshot\ 2020-09-29\ 193610.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+header nav {
+    background-color: rgba(0, 0 , 0, .2) !important;
+}
+header .overlay {
+    top:0;
+    left:0;
+    background-color: rgba(0, 0 , 0, .5);
+}
+header h3 {
+    top: 30%;
+    left: 10%;
+    animation: shahad 1.8s 1 ease-in-out;
+}
+header h2 {
+top:35%;
+left: 10%;
+animation: umniah 2s 1 ease-in-out;
+
+}
+header p {
+    bottom: 35%;
+    left: 10%;
+    animation: ayat 2s 1 ease-in-out;
+
+}
+
+@keyframes shahad {
+    0% { top:-30%}
+    100% {top: 30%}  
+}
+@keyframes umniah {
+    0%{left: -10%}
+    100%{left:10%}
+}
+@keyframes ayat {
+    0%{bottom: -35%}
+    100%{bottom: 35%}
+}
+/* end header */
+/* start about */
+.about ul li i{
+    font-size: 1.3rem;
+}
+.about .icons i {
+    color: rgb(224, 174, 115) !important;
+}
+.about i:hover {
+    animation: hind 2s 1 ease-in-out;
+    color: rgb(238, 170, 69) !important;
+}
+@keyframes hind {
+    0%{ transform: scale(1);}
+    100%{ transform: scale(1.5);}
+}
+/* end about */
+/* start our work */
+.our-work .rwan img {
+    transition: all 2s;
+}
+.our-work .rwan:hover img{
+    transform: scale(1.3);
+}
+.our-work .shahad i:hover {
+    color: #fff !important;
+}
+.our-work .shahad i:hover
+{
+    animation: ali 2s;
+    color: #555 !important;
+transition: all 2s;
+}
+.our-work .shahad h3:hover{
+animation: ali 2s;
+color: #555 !important;
+transition: all 2s;
+}
+.our-work .shahad h5:hover{
+    animation: ali 2s;
+}
+@keyframes ali {
+    0%{transform:scale(1)}
+    100%{ transform:scale(1.2)}
+}
+/* end our work */
+/* start new */
+.new img:hover {
+animation: rotate 4s;
+}
+@keyframes rotate {
+    0%{transform: rotateY(0deg);}
+    100%{transform: rotateY(360deg);}
+}
+/* end new */
+/* start bloker */
+.bloker img:hover{
+animation: bloker 2s;
+}
+@keyframes bloker {
+    0%{opacity:1}
+    100%{opacity: .6;}
+}
+/* end bloker */
+/* start footer */
+footer ul li,
+footer .div {
+    border: 0;
+    border-bottom: 1px solid #555 !important;
+}
+footer .div:hover h6,
+footer ul li:hover
+{
+color: rgb(238, 170, 69) !important;
+animation: hassan 3s;
+}
+@keyframes hassan{
+    0%{padding-left:0}
+    100%{padding-left:13px; }
+}
+footer .copyright {
+    background-color: #222;
+}
+/* end footer */
